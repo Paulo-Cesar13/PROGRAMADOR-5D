@@ -4,24 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+<link href = "https: //fonts.googleapis.com/css2? family = Roboto: wght @ 100 & display = swap "rel =" stylesheet ">
+    <script src="https://kit.fontawesome.com/76c89a6fd3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>GERENTE DE TAREFAS</title>
 </head>
 <body>
     <header>
-        <div class="conteiner">
+        <div class="conteiner-pri">
             <h1>
                 LISTA DE TAREFAS
             </h1>
         </div><!--conteiner-->
     </header>
     <section>
-        <div class="conteiner">
-            <input placeholder="O que tenho que fazer..." type="text">
-            <button>
-                ADICIONAR!
-            </button>
-        </div><!--cinteiner-->
+        <div class="conteiner-seg">
+            <div class="top">
+                <input placeholder="O que tenho que fazer..." type="text">
+                <button id="botao-adicionar">
+                    ADICIONAR
+                </button>
+            </div><!--top-->
+            <div class="solo">
+                <ul id="tarefas">
+                    <li class="item-tarefa">
+                        <button class="icon">
+                            <i class="fas fa-rocket"></i>
+                        </button>
+                        <p class="nome-tarefa">
+                            Estudar Programação
+                        </p>
+                        <button class="icon-lixo">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div><!--solo-->
+        </div><!--conteiner-seg-->
     </section>
 </body>
 </html>
